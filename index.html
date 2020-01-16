@@ -5,8 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Custom TextFit</title>
+    <style>
+        body {
+            background: #e3e3ee;
+        }
+        
+        .overflowBox {
+            width: 50%;
+            height: 10%;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            background: white;
+            z-index: 99;
+        }        
+    </style>
 </head>
 <body>
-    
+    <div class="overflowBox textfit" data-textfit-min="10">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eaque, quasi temporibus similique nam ex? Deleniti, aliquid maxime quisquam dolorum a ullam nesciunt animi voluptatibus. Totam laboriosam possimus reprehenderit labore.    
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eaque, quasi temporibus similique nam ex? Deleniti, aliquid maxime quisquam dolorum a ullam nesciunt animi voluptatibus. Totam laboriosam possimus reprehenderit labore.    
+      </div>    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="text-fit-new.js"></script>
 </body>
 </html>
