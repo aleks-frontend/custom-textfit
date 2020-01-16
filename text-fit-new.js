@@ -1,5 +1,5 @@
 // jQuery version of the function
-function textfit() {
+function textfit() {    
     $('.textfit').each(function () {
         $(this).css('font-size', 'initial');
         $(this).wrapInner('<div class="textfit-inner" style="display:inline-block;white-space:nowrap"></div>');
@@ -40,12 +40,12 @@ function textfitJS() {
             ${originalHTML}
         </div>`;
         
-        const textfitInner = document.querySelector('.textfit-inner');
+        const textfitInner = container.querySelector('.textfit-inner');
         const compStyles = window.getComputedStyle(container);
         const fontSize = parseInt(compStyles.getPropertyValue('font-size'));
         const containerWidth = container.offsetWidth;
-        const innerWidth = textfitInner.offsetWidth;
-        let newfontSize = (containerWidth * fontSize) / innerWidth;
+        const textfitInnerWidth = textfitInner.offsetWidth;
+        let newfontSize = (containerWidth * fontSize) / textfitInnerWidth;
         const maxFont = parseInt(container.dataset.textfitMax);
         const minFont = parseInt(container.dataset.textfitMin);
         const adjust = parseInt(container.dataset.textfitAdjust);
