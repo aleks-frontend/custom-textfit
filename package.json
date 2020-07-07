@@ -23,6 +23,6 @@
   "homepage": "https://github.com/aleks-frontend/custom-rich-text#readme",
   "description": "",
   "dependencies": {
-    "npm": "^6.8.0"
+    "npm": "^6.14.6"
   }
 }
